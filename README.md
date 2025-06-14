@@ -20,6 +20,49 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Development Tools
+
+This project is configured with the following development tools:
+
+### Code Quality & Formatting
+
+- **ESLint**: Linting with Next.js, TypeScript, and Prettier integration
+- **Prettier**: Code formatting with import sorting
+- **TypeScript**: Type checking with strict configuration
+- **Husky**: Git hooks for pre-commit checks
+
+### Available Scripts
+
+```bash
+# Development
+npm run dev          # Start development server with Turbopack
+npm run build        # Build for production
+npm run start        # Start production server
+
+# Code Quality
+npm run lint         # Run ESLint
+npm run lint:fix     # Run ESLint with auto-fix
+npm run format       # Format code with Prettier
+npm run format:check # Check if code is formatted
+npm run type-check   # Run TypeScript type checking
+npm run pre-commit   # Run all checks (used by Husky)
+```
+
+### Git Hooks
+
+- **pre-commit**: Runs linting, formatting check, and type checking
+- **commit-msg**: Enforces conventional commit message format
+
+### VSCode Setup
+
+Install the recommended extensions for the best development experience:
+
+- Prettier - Code formatter
+- ESLint
+- TypeScript support
+- Auto rename tag
+- Path intellisense
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
